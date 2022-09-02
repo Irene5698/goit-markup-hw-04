@@ -124,6 +124,7 @@ button {
   display: flex;
   margin-left: auto;
   align-items: center;
+  text-align: center;
 }
 
 .auth-nav .item + .item {
