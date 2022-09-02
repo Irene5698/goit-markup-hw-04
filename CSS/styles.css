@@ -123,12 +123,16 @@ button {
 .auth-nav {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
+
 .auth-nav .item + .item {
   margin-left: 50px;
 }
 
 .svg-header {
+  text-align: center;
+  align-items: center;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -159,10 +163,6 @@ button {
   color: var(--accent-text-color);
 }
 
-.svg-header {
-  align-items: center;
-  text-align: center;
-}
 
 .header .mail {
   color: var(--secondary-text-color);
@@ -171,6 +171,8 @@ button {
 /* Logo */
 
 .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--black-text-color);
   font-family: "Raleway";
   font-weight: 700;
@@ -345,8 +347,8 @@ a {
   fill: currentColor;
 }
 
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
+.socials-link:hover,
+.socials-link:focus {
   color: var(--accent-background-color);
   background-color: var(--button-active);
 }
@@ -517,8 +519,8 @@ footer {
   fill: var(--white-text-color);
 }
 
-.footer-social-link:hover .footer-socials-icon,
-.footer-social-link:focus .footer-socials-icon {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--button-active);
 }
 
