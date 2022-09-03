@@ -141,12 +141,13 @@ button {
 .header .link {
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  align-items: center;
 }
 .header .link:hover,
 .header .link:focus {
@@ -228,7 +229,7 @@ a {
   text-transform: uppercase;
 }
 /* button */
-
+/*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);*/
 .button {
   margin: 0 auto;
   display: inline-block;
@@ -237,7 +238,6 @@ a {
   min-height: 50px;
   border: none;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
   font-weight: 700;
@@ -417,8 +417,6 @@ a {
 }
 
 .client-item {
-  display: flex;
-  justify-content: center;
   width: 170px;
   height: 92px;
 }
@@ -434,13 +432,14 @@ a {
   border-radius: 4px;
 }
 
-.svg-logo {
-  fill: currentColor;
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-text-color);
+  border-color: var(--accent-text-color);
 }
 
-.client-link:hover .svg-logo,
-.client-link:focus .svg-logo {
-  fill: var(--accent-text-color);
+.svg-logo {
+  fill: currentColor;
 }
 
 .clients-list .client-item + .client-item {
@@ -507,7 +506,7 @@ footer {
   text-transform: uppercase;
 }
 
-.footer-list {
+.footer .container {
   display: flex;
   align-items: baseline;
 }
@@ -588,6 +587,9 @@ footer {
 .section-portfolio .button:focus {
   color: var(--white-text-color);
   background: var(--accent-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .title-border {
@@ -612,15 +614,21 @@ footer {
   color: var(--grey-text-color);
 }
 
-.portfolio-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .list-images {
   display: flex;
   flex-wrap: wrap;
 }
+
+.link-images {
+  display: block;
+}
+
+.link-images:hover,
+.link-images:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .list-item-images {
   width: 370px;
   margin-right: 30px;
